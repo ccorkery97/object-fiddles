@@ -8,7 +8,11 @@
 
   //Code here
 
-
+var me = { 
+  name: 'Conor',
+  age: 20,
+};
+alert(me.name);
 
 
 
@@ -22,7 +26,14 @@
 
   //Code here
 
-
+var favoriteThings = {
+  band: 'Avett Brothers'
+  food: 'Pasta'
+  person: 'Madeline'
+  book: 'Name of the Wind'
+  movie: 'Kung Fury'
+  holiday: 'Christmas'
+};
 
 
 
@@ -32,7 +43,8 @@
 
   //Code here
 
-
+favoriteThings.car = 'Astin Martin';
+favoriteThings.brand = 'Polo';
 
 
 
@@ -40,7 +52,8 @@
 
   //Code here
 
-
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 
 
 
@@ -60,7 +73,10 @@ that is named color, with the value being the color of your backpack.
 
   //Code here
 
-
+var backPack = {};
+var item = 'firstPocket';
+backPack[item] = 'chapstick';
+backPack.color = 'black';
 
 
 
@@ -68,7 +84,7 @@ that is named color, with the value being the color of your backpack.
 //After you do the above, alert your entire backPack object.
 
   //Code here
-
+alert(backPack);
  
 
 /*
@@ -78,7 +94,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
   //Code here
-
+console.log(backPack);
 
 
 
@@ -101,7 +117,8 @@ var user2 = {
 
   //Code Here
 
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 
@@ -122,7 +139,7 @@ var user2 = {
 //Create an empty object called methodCollection.
 
   //Code Here
-
+var methodCollection = {};
 
 
 
@@ -134,14 +151,20 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
-
+methodCollection['alertHello'] = function alertHello(){
+  alert('hello');
+};
+methodCollection['logHello'] = function logHello(){
+  console.log('hello');
+};
 
 
 
 //Now call your alertHello and logHello methods.
 
   //Code Here
-
+methodCollection['alertHello'];
+methodCollection['logHello'];
 
 
 
@@ -158,7 +181,13 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
-
+var makePerson = (name, birthday, ssn) => {
+  var person = {};
+  person['name'] = name;
+  person['birthday'] = birthday;
+  person['ssn'] = ssn;
+  return person;
+}
 
 
 
@@ -173,4 +202,9 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
-
+var makeCard = (cardNumber, expirationDate, securityCode) => {
+  var creditCard = {};
+  creditCard['cardNumber'] = cardNumber;
+  creditCard['expirationDate'] = expirationDate;
+  creditCard['securityCode'] = securityCode;
+}
